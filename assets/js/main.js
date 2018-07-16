@@ -158,11 +158,12 @@ $(document).ready(function() {
         // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
         var mapOptions = {
             // How zoomed in you want the map to start at (always required)
-            zoom: 16,
+            zoom: 12,
             scrollwheel: false,
             navigationControl: false,
             mapTypeControl: false,
             scaleControl: false,
+
             // The latitude and longitude to center the map (always required)
             center: new google.maps.LatLng(lattuide, longtuided), // New York
 
@@ -358,7 +359,7 @@ $(document).ready(function() {
             position: new google.maps.LatLng(lattuide, longtuided),
             map: map,
             icon: 'assets/img/map-icon.png',
-            title: 'cocoon!'
+            title: 'Temuco!'
         });
     }
 
