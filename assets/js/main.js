@@ -358,7 +358,7 @@ $(document).ready(function() {
         var marker = new google.maps.Marker({
             position: new google.maps.LatLng(lattuide, longtuided),
             map: map,
-            icon: 'assets/img/map-icon.png',
+            icon: 'assets/img/icons/map-icon.png',
             title: 'Temuco!'
         });
     }
