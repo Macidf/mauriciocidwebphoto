@@ -1,0 +1,9 @@
+RewriteEngine On
+RewriteCond %{ENV:HTTPS} !on [NC]
+RewriteCond %{HTTP_HOST} ^mauriciciofotografia\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.mauriciciofotografia\.com$
+RewriteRule ^(.*)$ https://mauriciciofotografia.com/$1 [R=301,L,NE]
+
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www.mauriciciofotografia.com [NC]
+RewriteRule ^(.*)$ https://mauriciciofotografia.com/$1 [L,R=301]
